@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    <title>Cox/Huisache creek</title>
+    <style>
+       #map {
+        height: 98vh;
+        width: 98vw;
+        align-self:center;
+        margin: auto;
+       }
+    </style>
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="MeasureTool.min.js"></script>
+      <script src="maps.js"></script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false&libraries=geometry&key=AIzaSyDoQLe8s7JUbTZ_ubXhGY4cUmLiNqWvQxw&callback=initMap">
+      </script>
+
+
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+    var map;
+      function initMap() {
+        var uluru = {lat: 28.733038588458793, lng:   -96.52838531591432}; 
+
+         map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: uluru,
+        });
+      }
+    
+    </script>
+  </body>
+</html>
